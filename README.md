@@ -10,8 +10,17 @@ In accordance with Nyffenegger's licensing restriction I left the copyright stat
 
 The code is as is with no warranty. Use at your own risk.
 
+===============
+The C++ Example
+===============
 
-The C++ code can be compiled using scons
+To compile the c++ you'll have to install the following
+
+  #[root] yum install -y scons
+  #[root] yum install -y openssl
+  #[root] yum install -y openssl-devel
+
+Once these are installed, to compile do the following
 
   $ cd aesPractice
   $ scons
@@ -20,8 +29,17 @@ To run it
 
   $ ./aesenc
 
+================
+The Perl Example
+=================
 
-To run the perl code you may have to install a number of perl dependencies. Once you do, simply run
+To run the perl code you may have to install a number of perl dependencies. cpan is the easiest way
+
+  #[root] yum install -y cpan
+  #[root] cpan -i String::HexConvert
+
+
+Once you do, simply run
 
   $ ./aesencdec.pl 
 
